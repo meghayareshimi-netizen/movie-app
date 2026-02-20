@@ -33,5 +33,5 @@ authForm.addEventListener('submit', (e) => {
     alert(`${isLogin ? 'Login' : 'Registration'} successful! Welcome to Netflix.`);
 
     // Redirect to main landing page
-    window.location.href = 'index.html';
+    window.location.href = 'dashboard.html';
 });

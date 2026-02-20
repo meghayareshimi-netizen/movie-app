@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone - TMDB</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Netflix - Login</title>
+    <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <nav id="nav" class="nav">
-        <img class="nav__logo" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
-        <div class="nav__avatar">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Avatar">
-        </div>
-    </nav>
+    <div class="login-container">
+        <header class="login-header">
+            <img class="login-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+                alt="Netflix Logo">
+        </header>
 
-    <header id="banner" class="banner">
-        <div class="banner__contents">
-            <h1 id="banner__title" class="banner__title"></h1>
-            <div class="banner__buttons">
-                <button class="banner__button">Play</button>
-                <button class="banner__button">My List</button>
+        <div class="login-body">
+            <div class="login-form-container">
+                <h1 id="auth-title">Sign In</h1>
+                <form id="auth-form">
+                    <input type="email" placeholder="Email or phone number" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" id="auth-button">Sign In</button>
+
+                    <div class="login-form-help">
+                        <div>
+                            <input type="checkbox" id="remember-me" checked>
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <a href="#">Need help?</a>
+                    </div>
+                </form>
+
+                <div class="login-signup-now">
+                    <span id="auth-toggle-text">New to Netflix?</span>
+                    <a href="#" id="auth-toggle-link">Sign up now.</a>
+                </div>
+
+                <div class="login-captcha">
+                    <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn
+                            more.</a></p>
+                </div>
             </div>
-            <h1 id="banner__description" class="banner__description"></h1>
         </div>
-        <div class="banner--fadeBottom"></div>
-    </header>
-
-    <div id="rows" class="rows">
-        <!-- Movie rows will be dynamically injected here -->
     </div>
 
-    <script src="script.js"></script>
+    <script src="login.js"></script>
 </body>
+
 </html>
